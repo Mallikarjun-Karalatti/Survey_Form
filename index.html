@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Shopping Survey</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title"> Shopping Survey</h1>
+    <p id="description">Welcome, we are very interested to know your likes..</p>
+
+    <!--form starts here-->
+    <form id="survey-form">
+
+      <!--1-->
+      <fieldset>
+    <label id="name-label" > Name: <input type="text" id="name" placeholder="write your name here"/required><label>
+  <label id="email-label"> Email:  <input type="email" id="email"placeholder="write your email here" required/></label>
+  <label id="number-label">Number:     <input type="number" id="number" max="12" min="10" placeholder="write your number here"/></label>
+  </fieldset>
+
+  <!--2-->
+  <fieldset>
+    <label>Looking for:
+  <select id="dropdown">
+    <option>Select one</option>
+    <option>Clothes</option>
+    <option>Footwears</option>
+    <option>Accessories</option>
+    <option>Other</option>
+  </slect>
+   </label>
+     </fieldset>
+
+     <!--3-->
+     <fieldset>
+       <label>This is for:
+   <label><input type="radio" name="person" value="M" class="inline"/> Male
+   </label>
+   <label><input type="radio" name="person" value="F" class="inline"> Female</label>
+   <label><input type="radio" name="person" value="C" class="inline"> Children</label>
+   </label>
+   </fieldset>
+
+   <!--4-->
+   <fieldset>
+   <label><input type="checkbox" value="0">Credit Card</label>
+   <label><input type="checkbox" value="1"/>Google Pay</label>
+   <label><input type="checkbox" value="2"/>Paytm</label>
+   <label><input type="checkbox" value="3"/>Cash-On-Delivary</label>
+   <label>Comments:<textarea placeholder="your comments appear here" rows="3" cols="30"></textarea></label>
+   </fieldset>
+
+   <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
